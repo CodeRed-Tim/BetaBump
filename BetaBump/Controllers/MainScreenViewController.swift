@@ -34,7 +34,7 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func musicButtonTapped(_ sender: Any) {
-        fetchAndConfigureSearch()
+//        fetchAndConfigureSearch()
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {
@@ -105,7 +105,7 @@ class MainScreenViewController: UIViewController {
                 print("this is the error1", error)
             case .success(let currUser):
                 DispatchQueue.main.async {
-                    self.createPlaylist(user: currUser)
+//                    self.createPlaylist(user: currUser)
 //                    self.userID = currUser.id
                     user = currUser
                     print("Current user: ", currUser)
@@ -122,6 +122,7 @@ class MainScreenViewController: UIViewController {
         let name = "Test"
         
         let createPlaylist = Spartan.createPlaylist(userId: user.id, name: name, isPublic: true) { (playlist) in
+            
             print("PLAYLIST CREATED")
             
         } failure: { (error) in

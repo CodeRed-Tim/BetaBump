@@ -7,7 +7,6 @@
 
 import UIKit
 import Shuffle_iOS
-import SDWebImage
 import UIKit
 import Spartan
 
@@ -32,6 +31,8 @@ class TestViewController: UIViewController, ButtonStackViewDelegate, SwipeCardSt
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        getTracks()
         
         cardStack.delegate = self
         cardStack.dataSource = self
@@ -171,7 +172,6 @@ class TestViewController: UIViewController, ButtonStackViewDelegate, SwipeCardSt
         
         
     }
-    
     
     //MARK: Helpers
     
